@@ -1,3 +1,4 @@
+/* Common Styles */
 .body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
@@ -39,8 +40,8 @@
 }
 
 .socials img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin-bottom: 10px;
   border-radius: 50%;
@@ -53,7 +54,7 @@
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 .donate a {
@@ -115,8 +116,7 @@
   border: 0;
 }
 
-/* Mobile Styles */
-
+/* Adjustments for Mobile Screens */
 @media (max-width: 768px) {
   .profile-picture {
     width: 150px;
@@ -125,40 +125,31 @@
 
   .socials {
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px 0;
+    justify-content: center;
   }
 
   .socials a {
-    margin: 5px;
+    margin: 10px;
   }
 
-	.donate {
-  background-color: powderblue;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  text-align: center; /* Center align the contents */
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stack the elements vertically */
-  align-items: center; /* Center align the items horizontally */
-}
+  .socials img {
+    width: 60px;
+    height: 60px;
+  }
 
-	.donate a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: navy;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  text-align: center;
-}
+  .donate {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .donate a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 
   .bio {
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
   }
 
   .bio p {

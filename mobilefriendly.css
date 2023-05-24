@@ -1,7 +1,7 @@
 /* Common Styles */
 .body {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #333;
   background-color: #f5f5f5;
@@ -9,12 +9,12 @@
 
 .profile-picture {
   display: block;
-  margin: 20px auto;
-  width: 200px;
-  height: 200px;
+  margin: 4% auto;
+  width: 25%;
+  height: auto;
   object-fit: contain;
   border-radius: 50%;
-  border: 5px solid #FFFFFF;
+  border: 5px solid #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 4% 0;
 }
 
 .socials a {
@@ -31,7 +31,7 @@
   align-items: center;
   text-decoration: none;
   color: #333333;
-  margin: 0 10px;
+  margin: 0 2%;
   transition: all 0.3s ease;
 }
 
@@ -40,8 +40,8 @@
 }
 
 .socials img {
-  width: 80px;
-  height: 80px;
+  width: 20%;
+  height: auto;
   object-fit: contain;
   margin-bottom: 10px;
   border-radius: 50%;
@@ -52,26 +52,26 @@
 .donate {
   background-color: powderblue;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+  padding: 4%;
+  margin: 4%;
   text-align: center;
 }
 
 .donate a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 4% 8%;
   background-color: navy;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 2%;
+  margin-bottom: 4%;
   text-align: center;
 }
 
 .donate iframe {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 4%;
   border-radius: 5px;
   display: block;
 }
@@ -80,8 +80,8 @@
   background-color: black;
   color: #ffd700;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+  padding: 4%;
+  margin: 4%;
   text-align: justify;
   animation-name: blueblack;
   animation-duration: 60s;
@@ -106,7 +106,7 @@
 }
 
 .bio p {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -119,40 +119,56 @@
 /* Adjustments for Mobile Screens */
 @media (max-width: 768px) {
   .profile-picture {
-    width: 150px;
-    height: 150px;
-  }
-
-  .socials {
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 40%;
   }
 
   .socials a {
-    margin: 10px;
+    margin: 2%;
   }
 
   .socials img {
-    width: 60px;
-    height: 60px;
+    width: 30%;
   }
 
   .donate {
-    margin: 10px;
-    padding: 10px;
+    padding: 6%;
+    margin: 6%;
   }
 
   .donate a {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 4% 8%;
   }
 
   .bio {
-    margin: 10px;
-    padding: 10px;
+    padding: 6%;
+    margin: 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-picture {
+    width: 60%;
   }
 
-  .bio p {
-    font-size: 16px;
+  .socials a {
+    margin: 4%;
+  }
+
+  .socials img {
+    width: 40%;
+  }
+
+  .donate {
+    padding: 8%;
+    margin: 8%;
+  }
+
+  .donate a {
+    padding: 4% 10%;
+  }
+
+  .bio {
+    padding: 8%;
+    margin: 8%;
   }
 }

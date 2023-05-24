@@ -7,11 +7,14 @@
 }
 
 .profile-picture {
-  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
   width: 200px;
   height: 200px;
-  margin: 20px auto;
-  display: block;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .socials {

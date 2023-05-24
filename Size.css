@@ -69,8 +69,8 @@
 }
 
 .donate iframe {
-  margin: 0 auto;
-  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   display: block;
 }

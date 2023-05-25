@@ -1,4 +1,5 @@
-.body {
+/* Remove the .body selector and use body selector instead */
+body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -6,116 +7,67 @@
   background-color: #f5f5f5;
 }
 
-.profile-picture {
-  display: block;
-  margin: 20px auto;
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  border-radius: 50%;
-  border: 5px solid #FFFFFF;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+/* Add styles for the toggle button icon */
+#toggle-mode {
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+
 }
 
-.socials a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #333333;
-  margin: 0 10px;
-  transition: all 0.3s ease;
+/* Add styles for the toggle button icon in dark mode */
+body.dark-mode #toggle-mode {
+   cursor: pointer;
 }
 
-.socials a:hover {
-  transform: translateY(-20px);
+
+
+
+
+/* Define styles for light mode */
+body {
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-.socials img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  border: 5px solid #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+/* Define styles for dark mode */
+body.dark-mode {
+  background-color: black;  /*Previosuly #333*/
+  color: #f5f5f5;
 }
 
-.donate {
-  background-color: powderblue;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  text-align: justify;
+/* Add styles for other elements */
+body.dark-mode .profile-picture {
+  border-color: darkgrey;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-.donate a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: navy;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  text-align: center;
+body.dark-mode .socials a {
+  color: #f5f5f5;
 }
 
-.donate iframe {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  display: block;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  aspect-ratio: 16 / 9;
+
+body.dark-mode .socials img {
+
+  border: 5px solid darkgrey;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  background-color: #333;
+} 
+  
+body.dark-mode .donate {
+  background-color: #444;
 }
 
-.bio {
-  background-color: black;
+body.dark-mode .donate a {
+  background-color: #666;
+}
+
+body.dark-mode .bio {
+  background-color: #000;
   color: #ffd700;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  text-align: justify;
-  animation-name: blueblack;
-  animation-duration: 60s;
 }
 
-@keyframes blueblack {
-  0% {
-    background-color: black;
-  }
-  25% {
-    background-color: grey;
-  }
-  50% {
-    background-color: black;
-  }
-  75% {
-    background-color: grey;
-  }
-  100% {
-    background-color: black;
-  }
-}
-
-.bio p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-
-.news {
-  border: 0;
+body.dark-mode .news {
+  border-color: #f5f5f5;
 }

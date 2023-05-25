@@ -5,17 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="mobilefriendly.css">
-
+  <link rel="stylesheet" type="text/css" href="Size.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">	
 
   <meta charset="UTF-8">
   <title>My Personal Website</title>
-  <style>
-     
-	  
 	
-  </style>
+	<!-- JavaScript code -->
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+    
+    // Check system preference and set initial mode
+    var prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDarkMode) {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
+	
 </head>
 <body>
+
+	<!-- toggle button -->
+  <i id="toggle-mode" class="fas fa-moon" onclick="toggleDarkMode()"></i>
+	
   <img src="profile-picture.JPG" alt="Profile Picture" class="profile-picture">
   <h1 style="text-align: center;">Nafis Al-Muhsin</h1>
   <div class="socials">

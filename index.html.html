@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <link rel="stylesheet" type="text/css" href="mobilefriendly.css">
+  <link rel="stylesheet" type="text/css" href="Size.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <meta charset="UTF-8">
+  <title>My Personal Website</title>
+
+  
+  <!-- Add the JavaScript code -->
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+    
+    // Check system preference and set initial mode
+    var prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDarkMode) {
+      document.body.classList.add("dark-mode");
+    }
+	
+  </script>
+  
+  
+</head>
+<body>
+
+  <!-- Add the toggle button -->
+  <i id="toggle-mode" class="fas fa-moon" onclick="toggleDarkMode()"></i>
+   
+<!-- Place this code where you want the dropdown navigation to appear -->
+<div class="menu">
+  <a class="menu-button" href="#">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <div class="menu-content">
+    <a href="#">Home</a>
+    <a href="#">Qur'an Follow-along</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+  <img src="profile-picture.JPG" alt="Profile Picture" class="profile-picture">
+  <h1 style="text-align: center;">Nafis Al-Muhsin</h1>
+  
+  
+  <div class="socials">
+    <a href="https://www.instagram.com/nafisalmuhsin">
+      <img src="instagram_logo.png" alt="Instagram Logo">
+      Instagram
+    </a>
+    <a href="https://www.youtube.com/@nafis_almuhsin">
+      <img src="youtube_logo.png" alt="YouTube Logo">
+      YouTube
+    </a>
+    <a href="https://www.tiktok.com/@nafis_almuhsin">
+      <img src="tiktok_logo.png" alt="TikTok Logo">
+      TikTok
+    </a>    
+	<a href="https://open.spotify.com/artist/7tboStjFJ0EZRaPlQeJLVa">
+      <img src="spotify_logo.png" alt="Spotify Logo">
+      Spotify
+    </a>
+  </div>
+  
+  <div class="bio">
+	<p> Assalamu'alaikum warahmatullahi wa barakatuh! I upload Qur'an videos on YouTube, 
+	 Instagram, and TikTok regularly. Please do make sure to follow and subscribe! I've 
+	 provided the links to all of them above.</p>
+	<button class="more">Read More</button>
+  </div>
+ 
+ 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var bio = document.querySelector('.bio');
+    var paragraph = document.createElement('p');
+    var text = document.createTextNode("My goal is to encourage more people to read the Qur'an and understand its meaning in order to reap its full benefits. Another aim is to have my recitations reach as many people as possible throughout the globe on all platforms. This way, in sha' Allah, even after I'm gone, my recitations will be heard, and I'll benefit from this in my grave as Sadaqa Jariyah! And anyone who shares the Qur'an's recitations will also receive the reward of Sadaqah Jariyah. May Allah (SWT) bless every single one of you for supporting me throughout my journey!");
+    paragraph.appendChild(text);
+
+    var moreButton = document.querySelector('.more');
+    var isExpanded = false;
+
+    moreButton.addEventListener('click', function() {
+      if (isExpanded) {
+        bio.removeChild(paragraph);
+        moreButton.textContent = 'Read More';
+      } else {
+        bio.appendChild(paragraph);
+        moreButton.textContent = 'Show Less';
+      }
+
+      isExpanded = !isExpanded;
+    });
+  });
+</script>
+  
+  <div class="donate">
+  <h2>Qur'an recitations - Follow along</h3>
+  
+  <div class="navigation">
+    <select onchange="location = this.value;">
+      <option value="">Select Surah</option>
+      <option value="surah_alaq.html">Surah Al-Alaq</option>
+      <option value="surah_albalad.html">Surah Al-Balad</option>
+      <option value="surah_ar_rahman.html">Surah Ar-Rahman</option>
+    </select>
+  </div>
+  
+ 
+  <p>Surah Al-Alaq</p>
+  <audio controls>
+  <source src="surah_alaq.ogg" type="audio/ogg">
+  <source src="surah_alaq.mp3" type="audio/mpeg"> 
+Your browser does not support the audio element.
+</audio>
+ 
+<div class="quranic-style">
+    <div class="verse">
+      <span class="verse-number">()</span>
+      <div class="verse-text">
+        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+        <div class="translation">In the name of Allah, the Most Gracious, the Most Merciful.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">1</span>
+      <div class="verse-text">
+        اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ
+        <div class="translation">Read in the name of your Lord Who created.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">2</span>
+      <div class="verse-text">
+        خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ
+        <div class="translation">He created man from a clinging substance.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">3</span>
+      <div class="verse-text">
+        اقْرَأْ وَرَبُّكَ الْأَكْرَمُ
+        <div class="translation">Read, and your Lord is the Most Generous.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">4</span>
+      <div class="verse-text">
+        الَّذِي عَلَّمَ بِالْقَلَمِ
+        <div class="translation">Who taught by the pen.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">5</span>
+      <div class="verse-text">
+        عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ
+        <div class="translation">Taught man that which he knew not.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">6</span>
+      <div class="verse-text">
+        كَلَّا إِنَّ الْإِنسَانَ لَيَطْغَىٰ
+        <div class="translation">No! Indeed, man transgresses</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">7</span>
+      <div class="verse-text">
+        أَنْ رَآهُ اسْتَغْنَىٰ
+        <div class="translation">Because he sees himself self-sufficient.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">8</span>
+      <div class="verse-text">
+        إِنَّ إِلَىٰ رَبِّكَ الرُّجْعَىٰ
+        <div class="translation">Indeed, to your Lord is the return.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">9</span>
+      <div class="verse-text">
+        أَرَأَيْتَ الَّذِي يَنْهَىٰ
+        <div class="translation">Have you seen the one who forbids</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">10</span>
+      <div class="verse-text">
+        عَبْدًا إِذَا صَلَّىٰ
+        <div class="translation">A servant when he prays?</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">11</span>
+      <div class="verse-text">
+        أَرَأَيْتَ إِنْ كَانَ عَلَى الْهُدَىٰ
+        <div class="translation">Have you seen if he is upon guidance</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">12</span>
+      <div class="verse-text">
+        أَوْ أَمَرَ بِالتَّقْوَىٰ
+        <div class="translation">Or enjoins righteousness?</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">13</span>
+      <div class="verse-text">
+        أَرَأَيْتَ إِنْ كَذَّبَ وَتَوَلَّىٰ
+        <div class="translation">Have you seen if he denies and turns away -</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">14</span>
+      <div class="verse-text">
+        أَلَمْ يَعْلَمْ بِأَنَّ اللَّهَ يَرَىٰ
+        <div class="translation">Does he not know that Allah sees?</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">15</span>
+      <div class="verse-text">
+        كَلَّا لَئِنْ لَمْ يَنْتَهِ لَنَسْفَعًا بِالنَّاصِيَةِ
+        <div class="translation">No! If he does not desist, We will surely drag him by the forelock -</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">16</span>
+      <div class="verse-text">
+        نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ
+        <div class="translation">A lying, sinning forelock.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">17</span>
+      <div class="verse-text">
+        فَلْيَدْعُ نَادِيَهُ
+        <div class="translation">Then let him call his associates;</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">18</span>
+      <div class="verse-text">
+        سَنَدْعُ الزَّبَانِيَةَ
+        <div class="translation">We will call the angels of Hell.</div>
+      </div>
+    </div>
+    <div class="verse">
+      <span class="verse-number">19</span>
+      <div class="verse-text">
+        كَلَّا لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِبْ
+        <div class="translation">No! Do not obey him. But prostrate and draw near [to Allah].</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  
+  
+  <div class="formsection">
+    <p>Want to learn more about our services? Feel free to fill in this form and we will get in touch! (Note: Items marked with '*' are mandatory)</p>
+    <br>
+<form action="https://form2channel.com/?apikey=3Emjq5rCHjGgwjErDXCflOzs6CkKe4" method="POST">
+      <label for="forename">Forename*:</label><br>
+      <input type="text" id="forename" name="forename" required><br><br>
+
+      <label for="surname">Surname*:</label><br>
+      <input type="text" id="surname" name="surname" required><br><br>
+
+      <label for="email">Email*:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mobileTelNo">Mobile phone number:</label><br>
+      <input type="tel" id="mobileTelNo" name="mobileTelNo" pattern="[0-9]{11}"><br><br>
+
+      <label for="postalAddress">Message:</label><br>
+      <textarea id="postalAddress" name="postalAddress" required></textarea><br><br>
+
+
+
+      <input type="submit" value="Submit">
+	  <input name="formto_redirect" type="hidden" value="https//:nafisalmuhsin.com">
+    </form>
+  </div>
+  
+  
+    <!-- <div class="donate">
+      
+	  <h3>Earthquake in Turkey and Syria</h3>
+	  <p>As many of you may know, a devastating earthquake with a magnitude of 7.8 hit our brothers and sisters in Turkey and Syria on February 6, 2023, shattering the lives of thousands of innocent people. The destruction and loss are beyond comprehension, and seeing our brothers and sisters in this condition is truly heartbreaking. It is impossible not to feel overwhelmed with emotion as we witness the desperation, suffering, and trauma of those who have been affected. And yet, through it all, the patience and resilience of some of these brothers and sisters is nothing short of awe-inspiring.
+
+This is undoubtedly a test from Allah for both sides - a test of strength and Iman for those affected and their families, and a test of our selflessness and compassion towards those in distress and in need of aid. As Muslims, it is our duty to help those in need, and we must do everything in our power to alleviate the suffering of our brothers and sisters.
+
+Therefore, I urge all of you to open your hearts and donate as generously as you can, for even the smallest contributions can make a world of difference to those in need. And for those who cannot donate, I ask that you keep our brothers and sisters in your thoughts and prayers, for the power of dua should not be underestimated.
+
+May Allah bless our brothers and sisters in Turkey and Syria, and grant them the strength and patience to endure this calamity. And may He reward all those who help and support them during this difficult time. Jazak Allahu khair.
+ <p>
+	  
+	  <a href= "https://www.launchgood.com/campaign/turkey_emergency_earthquake_response_1#!/" >Click here to Donate</a>
+     
+	  <iframe class="news" src="https://www.youtube.com/embed/79rvArkMPcI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>  -->
+  
+  
+  
+  
+</body>
+
+
+     
+
+</html>

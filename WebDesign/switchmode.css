@@ -1,0 +1,137 @@
+/* Remove the .body selector and use body selector instead */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Add styles for the toggle button icon */
+#toggle-mode {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+}
+
+/* Add styles for the toggle button icon in dark mode */
+body.dark-mode #toggle-mode {
+   cursor: pointer;
+}
+
+
+
+
+
+/* Define styles for light mode */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Define styles for dark mode */
+body.dark-mode {
+  background-color: black;  /*Previosuly #333*/
+  color: #f5f5f5;
+}
+
+/* Add styles for other elements */
+body.dark-mode .profile-picture {
+  border-color: darkgrey;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .socials a {
+  color: #f5f5f5;
+}
+
+
+body.dark-mode .socials img {
+
+  border: 5px solid darkgrey;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  background-color: #333;
+} 
+  
+body.dark-mode .donate {
+  background-color: #444;
+}
+
+body.dark-mode .donate a {
+  background-color: #666;
+}
+
+body.dark-mode .bio {
+  background-color: #444;
+  color: white;
+}
+
+
+
+
+body.dark-mode .news {
+  border-color: #f5f5f5;
+}
+
+body.dark-mode .verse-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: darkgrey;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px; 
+}
+
+body.dark-mode .translation {
+  font-size: 14px;    
+  color: white;   
+  margin-top: 5px;
+} 
+
+/*menu*/
+body.dark-mode .menu:hover .menu-content {
+  display: block;
+}
+
+body.dark-mode .menu-button {
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+body.dark-mode .menu-button span {
+  background-color: #f5f5f5;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+
+body.dark-mode .menu-button:hover {
+  background-color: #444;
+}
+
+/* Adjust the position and style of the dropdown content */
+body.dark-mode .menu-content {
+  top: 40px;
+  left: -90px;
+  min-width: 120px;
+  background-color: #444;
+}
+
+body.dark-mode .menu-content a{
+	color: white;
+}

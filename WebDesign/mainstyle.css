@@ -1,0 +1,337 @@
+/* Common Styles */
+.body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.arabic {
+	 font-family: "Simplified Arabic", sans-serif;
+	  font-size: 20px;
+}
+
+/*Hamburger Menu*/
+/* Add the following CSS styles to your existing CSS file or add a new one */
+
+/* Style for the dropdown navigation */
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.menu:hover .menu-content {
+  display: block;
+}
+
+.menu-button {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu-button span {
+  background-color: #333;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+
+.menu-button:hover {
+  background-color: #ddd;
+}
+
+/* Adjust the position and style of the dropdown content */
+.menu-content {
+  top: 40px;
+  left: -90px;
+  min-width: 120px;
+}
+
+
+.profile-picture {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.socials a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-20px);
+}
+
+.socials img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.donate {
+  background-color: powderblue;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.donate a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.donate iframe {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: block;
+}
+
+.bio {
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.bio p.expand {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+.bio p.expand {
+    max-height: 200px; /* Adjust the value based on the height of the expanded content */
+  }
+
+
+.more {
+background-color: lightgrey;
+border-color: grey;
+border-bottom-color: grey;
+border-left-color: grey;
+border-right-color: grey;
+border-radius: 4px;
+}
+
+ /* 
+  animation-name: blueblack;
+  animation-duration: 60s;
+}
+
+@keyframes blueblack {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: grey;
+  }
+  50% {
+    background-color: black;
+  }
+  75% {
+    background-color: grey;
+  }
+  100% {
+    background-color: black;
+  }
+}
+*/
+
+.bio p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.news {
+  border: 0;
+}
+
+/*For Quran*/
+
+@font-face {
+  font-family: "Simplified Arabic";
+  src: url("https://example.com/fonts/SimplifiedArabic.woff2") format("woff2"),
+       url("https://example.com/fonts/SimplifiedArabic.woff") format("woff");
+}
+
+.quranic-style {
+  font-family: "Simplified Arabic", sans-serif; /* Or any other Quranic font */
+}
+
+.verse {
+  margin-bottom: 10px;
+}
+
+.verse-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.verse-text {
+  flex-grow: 1;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.translation {
+  font-size: 14px;    
+  color: black;   
+  margin-top: 5px;
+}    
+
+
+
+
+/* Adjustments for Mobile Screens */
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .socials {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .socials a {
+    margin: 10px;
+  }
+
+  .socials img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .donate {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .donate a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .bio {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .bio p {
+    font-size: 16px;
+  }
+}
+
+
+/* Style for the dropdown navigation */
+.navigation {
+  position: relative;
+  display: inline-block;
+}
+
+.navigation-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.navigation:hover .navigation-content {
+  display: block;
+}
+
+.navigation a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+}
+
+/* Optional: Add a background color to the navigation button */
+.navigation-button {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-button:hover {
+  background-color: #ddd;
+}
+

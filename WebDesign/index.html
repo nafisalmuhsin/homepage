@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <link rel="stylesheet" type="text/css" href="mainstyle.css">
+  <link rel="stylesheet" type="text/css" href="switchmode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <meta charset="UTF-8">
+  <title>My Web Designer Portofolio</title>
+
+  
+  <!-- Add the JavaScript code -->
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+    
+    // Check system preference and set initial mode
+    var prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDarkMode) {
+      document.body.classList.add("dark-mode");
+    }
+	
+  </script>
+  
+  
+</head>
+<body>
+
+  <!-- Add the toggle button -->
+  <i id="toggle-mode" class="fas fa-moon" onclick="toggleDarkMode()"></i>
+   
+<!-- Place this code where you want the dropdown navigation to appear -->
+<div class="menu">
+  <a class="menu-button" href="#">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <div class="menu-content">
+    <a href="#">Home</a>
+    <a href="#">Showcase</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+  <img src="profilepic.png" alt="Profile Picture" class="profile-picture">
+  <h1 style="text-align: center;">Nafis Al-Muhsin</h1>
+  <h5 style="text-align: center;">Website Developer</h5>
+  
+  <div class="socials">
+    <a href="https://www.fiverr.com/nafis_a?">
+      <img src="fiverr_logo.png" alt="Fiverr Logo">
+      
+    </a>Fiverr
+	<a href="https://www.freelancer.com/u/nafis201">
+	  <img src="freelancer_logo.svg" alt="Freelancer Logo">
+	  
+	</a>Freelancer
+   
+  </div>
+  
+  <div class="bio">
+	<p> Hi there! You're probably here because you've seen my web design Gig on fiverr. I've personally created this 
+	website using code in order to give you a small demonstartion of my web design capabilities and to talk a little bit about my self.
+	If you are interested to learn more about what i do, click more!, </p>
+	<button class="more">Read More</button>
+  </div>
+ 
+ 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var bio = document.querySelector('.bio');
+    var paragraph = document.createElement('p');
+    var text = document.createTextNode("As a Passionate and driven university student specializing in cyber security, I bring a unique blend of technical expertise and creative design skills to the world of web development. With a solid foundation in HTML5 and experience in creating websites for both academic assignments and personal projects, I possess the skills to deliver dynamic web pages that captivate users. What sets me apart is my ability to seamlessly combine my knowledge of CSS with an artistic eye for modern and visually appealing designs. I go beyond the basics, creating aesthetically pleasing web pages that engage users and elevate the online presence of businesses and individuals. My services encompass comprehensive website development, including multi-page navigation, seamless integration of links, and eye-catching social media icons. I am committed to delivering high-quality results that exceed client expectations. Driven by a passion for technology and a dedication to staying ahead of the curve, I continuously expand my skill set and stay up-to-date with the latest trends in web development and cyber security. Choose me as your web development partner, and together we'll bring your vision to life, combining security, functionality, and stunning design into a seamless user experience. Let's create a website that stands out from the crowd and leaves a lasting impression.");
+    paragraph.appendChild(text);
+
+    var moreButton = document.querySelector('.more');
+    var isExpanded = false;
+
+    moreButton.addEventListener('click', function() {
+      if (isExpanded) {
+        bio.removeChild(paragraph);
+        moreButton.textContent = 'Read More';
+      } else {
+        bio.appendChild(paragraph);
+        moreButton.textContent = 'Show Less';
+      }
+
+      isExpanded = !isExpanded;
+    });
+  });
+</script>
+  
+  <div class="donate">
+  <h2>Contact me:</h3>
+    <div class="formsection">
+    <p>Interested in my services or have any questions? Feel free to fill in this form and i will get in touch soon! (Note: Items marked with '*' are mandatory)</p>
+    <br>
+<form action="https://form2channel.com/?apikey=3Emjq5rCHjGgwjErDXCflOzs6CkKe4" method="POST">
+      <label for="full">Full name*:</label><br>
+      <input type="text" id="forename" name="forename" required><br><br>
+
+      <label for="email">Email*:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mobileTelNo">Mobile number:</label><br>
+      <input type="tel" id="mobileTelNo" name="mobileTelNo" pattern="[0-9]{11}"><br><br>
+
+      <label for="Message">Your message:</label><br>
+      <textarea id="Message" name="Message" required></textarea><br><br>
+
+
+
+      <input type="submit" value="Submit">
+	  <input name="formto_redirect" type="hidden" value="https//:nafisalmuhsin.com">
+    </form>
+  </div>
+  
+ 
+
+
+  </div>
+  
+  
+ 
+  
+ 
+  
+  
+</body>
+
+
+     
+
+</html>

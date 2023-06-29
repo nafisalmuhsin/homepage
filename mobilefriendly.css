@@ -174,12 +174,19 @@
 }
 
 /* Adjustments for Mobile Screens */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .profile-picture {
     width: 150px;
     height: 150px;
     
+  }*/
+@media (max-width: 767px) {
+  /* Adjust font size and other styles for mobile devices */
+  body {
+    font-size: 16px;
   }
+}
+
 
   .socials {
     flex-wrap: wrap;

@@ -178,6 +178,7 @@
   .profile-picture {
     width: 150px;
     height: 150px;
+    
   }
 
   .socials {
@@ -195,9 +196,12 @@
   }
 
   .donate {
-    margin: 10px;
-    padding: 10px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
   }
+  /*margin: 10px;
+    padding: 10px;*/
 
   .donate a {
     padding: 8px 16px;
@@ -212,4 +216,7 @@
   .bio p {
     font-size: 16px;
   }
+
+
 }
+ 

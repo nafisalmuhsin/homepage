@@ -7,7 +7,15 @@
   background-color: #f5f5f5;
 }
 
+.arabic {
+	 font-family: "Simplified Arabic", sans-serif;
+	  font-size: 20px;
+}
 
+/*Hamburger Menu*/
+/* Add the following CSS styles to your existing CSS file or add a new one */
+
+/* Style for the dropdown navigation */
 .menu {
   position: absolute;
   top: 10px;
@@ -61,7 +69,6 @@
   left: -90px;
   min-width: 120px;
 }
-
 
 
 .profile-picture {
@@ -134,12 +141,35 @@
 }
 
 .bio {
-  background-color: black;
-  color: #ffd700;
+  background-color: lightgrey;
+  color: black;
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
   text-align: justify;
+}
+
+.bio p.expand {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+.bio p.expand {
+    max-height: 200px; /* Adjust the value based on the height of the expanded content */
+  }
+
+
+.more {
+background-color: lightgrey;
+border-color: grey;
+border-bottom-color: grey;
+border-left-color: grey;
+border-right-color: grey;
+border-radius: 4px;
+}
+
+ /* 
   animation-name: blueblack;
   animation-duration: 60s;
 }
@@ -161,6 +191,7 @@
     background-color: black;
   }
 }
+*/
 
 .bio p {
   font-size: 18px;
@@ -173,20 +204,55 @@
   border: 0;
 }
 
+/*For Quran*/
+
+@font-face {
+  font-family: "Simplified Arabic";
+  src: url("https://example.com/fonts/SimplifiedArabic.woff2") format("woff2"),
+       url("https://example.com/fonts/SimplifiedArabic.woff") format("woff");
+}
+
+.quranic-style {
+  font-family: "Simplified Arabic", sans-serif; /* Or any other Quranic font */
+}
+
+.verse {
+  margin-bottom: 10px;
+}
+
+.verse-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.verse-text {
+  flex-grow: 1;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.translation {
+  font-size: 14px;    
+  color: black;   
+  margin-top: 5px;
+}    
+
+
+
+
 /* Adjustments for Mobile Screens */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   .profile-picture {
     width: 150px;
     height: 150px;
-    
-  }*/
-@media (max-width: 767px) {
-  /* Adjust font size and other styles for mobile devices */
-  body {
-    font-size: 16px;
   }
-}
-
 
   .socials {
     flex-wrap: wrap;
@@ -203,12 +269,9 @@
   }
 
   .donate {
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+    margin: 10px;
+    padding: 10px;
   }
-  /*margin: 10px;
-    padding: 10px;*/
 
   .donate a {
     padding: 8px 16px;
@@ -223,7 +286,52 @@
   .bio p {
     font-size: 16px;
   }
-
-
 }
- 
+
+
+/* Style for the dropdown navigation */
+.navigation {
+  position: relative;
+  display: inline-block;
+}
+
+.navigation-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.navigation:hover .navigation-content {
+  display: block;
+}
+
+.navigation a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+}
+
+/* Optional: Add a background color to the navigation button */
+.navigation-button {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-button:hover {
+  background-color: #ddd;
+}
+

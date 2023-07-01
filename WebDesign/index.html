@@ -100,13 +100,13 @@
   });
 </script>
   
-  <div class="donate">
-  <h2>Contact me:</h3>
-    <div class="formsection">
-    <p>Interested in my services or have any questions? Feel free to fill in this form and i will get in touch soon! (Note: Items marked with '*' are mandatory)</p>
+<div class="donate">
+  <h2>Contact me:</h2>
+  <div class="formsection">
+    <p>Interested in my services or have any questions? Feel free to fill in this form and I will get in touch soon! (Note: Items marked with '*' are mandatory)</p>
     <br>
-<form action="https://form2channel.com/?apikey=3Emjq5rCHjGgwjErDXCflOzs6CkKe4" method="POST">
-      <label for="full">Full name*:</label><br>
+    <form id="contactForm" action="https://form2channel.com/?apikey=3Emjq5rCHjGgwjErDXCflOzs6CkKe4" method="POST">
+      <label for="forename">Full name*:</label><br>
       <input type="text" id="forename" name="forename" required><br><br>
 
       <label for="email">Email*:</label><br>
@@ -118,17 +118,29 @@
       <label for="Message">Your message:</label><br>
       <textarea id="Message" name="Message" required></textarea><br><br>
 
-
-
       <input type="submit" value="Submit">
-	  <input name="formto_redirect" type="hidden" value="https//:nafisalmuhsin.com">
+      <input name="formto_redirect" type="hidden" value="https://nafisalmuhsin.com/WebDesign">
     </form>
   </div>
-  
- 
+</div>
 
+<script>
+  var contactForm = document.getElementById("contactForm");
 
-  </div>
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Show success pop-up window
+    var successPopup = window.open("", "Success", "width=300,height=100");
+    successPopup.document.write("<h3> Thank you, your form has been submitted!</h3>");
+    successPopup.document.write("<button onclick='window.close()'>Close</button>");
+    successPopup.focus();
+    
+    // Reset the form fields
+    contactForm.reset();
+  });
+</script>
+
   
   
  

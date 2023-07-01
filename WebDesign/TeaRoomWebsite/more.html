@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="newstyle.css">
+  
+  
+  <meta charset="UTF-8">
+  <title>Find Out More</title>
+  
+  
+</head>
+<body>
+  <div class="navigate">
+    <img src="brand_logo.png" alt="Chollerton Tearooms logo" class="slogo"> 
+    <a href="index.html">Home</a>
+    <a class="active" href="more.html">Find out more</a>
+    <a href="menu.html">Menu</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+
+  <img src="brand_logo.png" alt="Chollerton Tearooms logo" class="logo">
+  <h1 style="text-align: center;">Chollerton Tearooms</h1>
+
+  <div class="formsection">
+    <p>Want to learn more about our services? Feel free to fill in this form and we will get in touch!</p>
+    <br>
+  <form id="contactForm" action="https://form2channel.com/?apikey=3Emjq5rCHjGgwjErDXCflOzs6CkKe4" method="POST">
+      <label for="forename">Forename*:</label><br>
+      <input type="text" id="forename" name="forename" required><br><br>
+
+      <label for="surname">Surname*:</label><br>
+      <input type="text" id="surname" name="surname" required><br><br>
+
+      <label for="email">Email*:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mobileTelNo">Mobile phone number:</label><br>
+      <input type="tel" id="mobileTelNo" name="mobileTelNo" pattern="[0-9]{11}"><br><br>
+
+      <label for="postalAddress">Postal address*:</label><br>
+      <textarea id="postalAddress" name="postalAddress" required></textarea><br><br>
+
+      <label for="catID">Category*:</label><br>
+      <select id="catID" name="catID">
+        <option value="c1">Tearoom</option>
+        <option value="c2">Craft Shop</option>
+        <option value="c3">Village Store</option>
+        <option value="c4">Post Office</option>
+        <option value="c5">Bed and Breakfast</option>
+      </select><br><br>
+
+      <label for="sendMethod">Method of Contact*:</label>
+      <select id="sendMethod" name="sendMethod">
+        <option value="post">Post</option>
+        <option value="email">Email</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+	   <input name="formto_redirect" type="hidden" value="https://nafisalmuhsin.com/WebDesign/TeaRoomWebsite">
+    </form>
+  </div>
+  
+<script>
+  var contactForm = document.getElementById("contactForm");
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Show success pop-up window
+    var successPopup = window.open("", "Success", "width=300,height=100");
+    successPopup.document.write("<h3> Thank you, your form has been submitted!</h3>");
+    successPopup.document.write("<button onclick='window.close()'>Close</button>");
+    successPopup.focus();
+    
+    // Reset the form fields
+    contactForm.reset();
+  });
+</script>
+  
+</body>
+</html>

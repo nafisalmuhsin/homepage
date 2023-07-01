@@ -1,0 +1,288 @@
+/* Default Style for everything */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0px;
+}
+
+/* Navigation */
+.navigate {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+}
+
+
+.navigate a {
+  color: #e3c152;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navigate a:hover {
+  background-color: #FFFAF0;
+  color: #333333;
+}
+
+.navigate a.active {
+  background-color: #FFD700;
+  color: black;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.slogo {
+  display: block;
+  margin: 0px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10%;
+
+}
+
+
+
+/* Heading */
+h1 {
+  font-family: red serifs, Serif;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+  
+}
+
+/* Social Media */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.socials a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: gold;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-20px);
+}
+
+.socials img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Introduction Section */
+.break {
+  background-color: black;
+  color: lightgrey;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+  font-family: red serifs, Serif;
+
+}
+
+.break p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+/*Reference section*/
+.reference {
+  background-color: #FFD700;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+}
+
+/*Gallery section*/
+.gallery { 
+  font-family: Comic Sans MS, cursive;
+ background-color: black;
+  color: #FFD700;
+  border-radius: ;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  width: 400px;
+  
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/*Redirect page after form submission*/
+
+.redirect a {
+  background-color: grey;
+  color: #e3c152;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.redirect a:hover {
+  background-color: white;
+  color: #333333;
+  transform: scale(1.50);
+  
+}
+  .redirect {
+  background-color: black;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+   
+}
+
+.redirect p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/*Form section*/
+.formsection {
+	width: 500px;
+  background-color: black;
+  color: #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+      margin-left: auto;
+    margin-right: auto;
+  text-align: center;
+  animation-name: blueblack;
+  animation-duration: 60s;
+    align-items: center;
+   
+}
+
+@keyframes blueblack {
+  0%   {background-color: black;}
+  25%  {background-color: grey;}
+  50%  {background-color: black;}
+  75%  {background-color: grey;}
+  100% {background-color: black;}
+  
+}
+
+.formsection p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  
+}
+  
+/*Security Considerations*/
+.security {
+  background-color: black;
+  color: #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.security p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+  .faq {
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .faq h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .faq ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .faq li {
+    margin-bottom: 20px;
+  }
+
+  .faq h3 {
+    font-size: 18px;
+    color: gold;
+    margin-bottom: 5px;
+  }
+
+  .faq p {
+    font-size: 16px;
+    color: grey;
+  }
+
+
+/*Menu*/
+.menu { 
+  font-family: Comic Sans MS, cursive;
+ background-color: black;
+  color: #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+.menu img {
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius; 10px;
+}

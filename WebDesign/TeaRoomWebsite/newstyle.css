@@ -133,13 +133,14 @@ h1 {
 
 /*Gallery section*/
 .gallery { 
-  font-family: Comic Sans MS, cursive;
  background-color: black;
   color: #FFD700;
   border-radius: ;
-  padding: 20px;
-  margin: 20px;
   text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; /* Add padding if needed */
+  box-sizing: border-box; /* Include padding in the total width */
 }
 .gallery img {
   max-width: 100%;

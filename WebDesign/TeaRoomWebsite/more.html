@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" type="text/css" href="newstyle.css">
+  
+  
+  <meta charset="UTF-8">
+  <title>Find Out More</title>
+  
+  
+</head>
+<body>
+  <div class="navigate">
+    <img src="brand_logo.png" alt="Chollerton Tearooms logo" class="slogo"> 
+    <a href="assignment.html">Home</a>
+    <a class="active" href="more.html">Find out more</a>
+    <a href="requests.php">View requests</a>
+    <a href="credits.html">Credits</a>
+  </div>
+
+  <img src="brand_logo.png" alt="Chollerton Tearooms logo" class="logo">
+  <h1 style="text-align: center;">Chollerton Tearooms</h1>
+
+  <div class="formsection">
+    <p>Want to learn more about our services? Feel free to fill in this form and we will get in touch! (Note: Items marked with '*' are mandatory)</p>
+    <br>
+    <form class="query" action="input.php" method="post">
+      <label for="forename">Forename*:</label><br>
+      <input type="text" id="forename" name="forename" required><br><br>
+
+      <label for="surname">Surname*:</label><br>
+      <input type="text" id="surname" name="surname" required><br><br>
+
+      <label for="email">Email*:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mobileTelNo">Mobile phone number:</label><br>
+      <input type="tel" id="mobileTelNo" name="mobileTelNo" pattern="[0-9]{11}"><br><br>
+
+      <label for="postalAddress">Postal address*:</label><br>
+      <textarea id="postalAddress" name="postalAddress" required></textarea><br><br>
+
+      <label for="catID">Category*:</label><br>
+      <select id="catID" name="catID">
+        <option value="c1">Tearoom</option>
+        <option value="c2">Craft Shop</option>
+        <option value="c3">Village Store</option>
+        <option value="c4">Post Office</option>
+        <option value="c5">Bed and Breakfast</option>
+      </select><br><br>
+
+      <label for="sendMethod">Method of Contact*:</label>
+      <select id="sendMethod" name="sendMethod">
+        <option value="post">Post</option>
+        <option value="email">Email</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

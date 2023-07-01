@@ -145,7 +145,7 @@ h1 {
 .gallery img {
   max-width: 100%;
   height: auto;
-  width: 400px;
+  width: auto;
   
   object-fit: contain;
   margin-bottom: 10px;

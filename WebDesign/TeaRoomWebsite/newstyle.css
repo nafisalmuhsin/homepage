@@ -219,6 +219,13 @@ h1 {
    
 }
 
+@media (max-width: 480px) {
+  .formsection {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
 @keyframes blueblack {
   0%   {background-color: black;}
   25%  {background-color: grey;}

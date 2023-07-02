@@ -160,6 +160,8 @@ align-items: center;
 @media (max-width: 480px) {
   .gallery img {
     width: 300px;
+	 align-items: center;
+	text-align: center;
   }
 }
 

@@ -1,7 +1,7 @@
 /* Default Style for everything */
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: #1d1d1f;
   margin: 0px;
 }
 
@@ -46,7 +46,7 @@ body {
   height: 200px;
   object-fit: contain;
   border-radius: 50%;
-  border: 5px solid #FFFFFF;
+  border: 5px solid grey;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -84,7 +84,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: gold;
+  color: lightgrey;
   margin: 0 10px;
   transition: all 0.3s ease;
 }
@@ -98,8 +98,9 @@ h1 {
   height: 100px;
   object-fit: contain;
   margin-bottom: 10px;
-  border-radius: 50%;
-  border: 5px solid #FFFFFF;
+  border-radius: 10px;
+  border: 3px solid grey;
+  background-color: #1d1d1f;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -131,45 +132,40 @@ h1 {
   text-align: justify;
 }
 
-/*Gallery section*/
-.gallery { 
- background-color: black;
-  color: #FFD700;
+
+.gallery {
+  display: grid;
+ font-family: red serifs, Serif;
+  background-color: black;
+  color: #ffd700;
   border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  gap: 20px; /* Add gap between grid items */
   padding: 20px;
   margin: 20px;
-  text-align: center;
 }
+
 .gallery img {
-     max-width: 100%;
+  width: 80%;
   height: auto;
-  width:auto;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: 10px;
-  border-radius; 10px;
-	
-	/*max-width: 100%;
-  height: auto;
-  width: auto;
-  text-align: center;
-align-items: center;	
-  object-fit: contain;
-  margin-bottom: 10px;*/
 }
-/*Gallery for phones*/
+
 @media (max-width: 480px) {
   .gallery img {
-    width: 300px;
-	 align-items: center;
-	text-align: center;
+    width: 100%;
   }
 }
 
-.gallery ol {
-  align-items: center; 	
+.gallery-item {
+  align-items: center;
   text-align: center;
   margin-bottom: 30px;
 }
+
+
 
 /*Redirect page after form submission*/
 
@@ -233,6 +229,9 @@ align-items: center;
 }
 
 .formsection p {
+	   max-width: 100%;
+  height: auto;
+  width:auto;
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
@@ -292,8 +291,8 @@ align-items: center;
 
 /*Menu*/
 .menu { 
-  font-family: Comic Sans MS, cursive;
- background-color: black;
+  font-family: red serifs, Serif;
+ background-color: #1d1d1f;
   color: #FFD700;
   border-radius: 10px;
   padding: 20px;
@@ -301,10 +300,28 @@ align-items: center;
   text-align: center;
 }
 .menu img {
-    max-width: 100%;
+   max-width: 100%;
   height: auto;
   width:auto;
   object-fit: contain;
   margin-bottom: 10px;
   border-radius; 10px;
 }
+
+.menu-button {
+  background-color: #e3c152;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #ffd700;
+  color: black;
+}
+

@@ -221,8 +221,9 @@ h1 {
 
 @media (max-width: 480px) {
   .formsection {
-    width: 100%;
+    width: 80%;
     padding: 10px;
+    
   }
 }
 

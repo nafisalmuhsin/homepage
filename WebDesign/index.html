@@ -49,7 +49,16 @@
     <a href="#">Showcase</a>
 <li><a href="#" onclick="scrollToSection('donate')">Contact</a></li>
   </div>
+
 </div>
+
+	
+  <script>
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 
   <img src="profilepic.png" alt="Profile Picture" class="profile-picture">
   <h1 style="text-align: center;">Nafis Al-Muhsin</h1>

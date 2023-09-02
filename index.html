@@ -34,6 +34,9 @@
 		else if (selectedSurah === "surahBalad") {
 		surahContent.innerHTML = surahBaladContent;
 		}
+		else if (selectedSurah === "surahFajr") {
+		surahContent.innerHTML = surahFajrContent;
+		}
 
             // Define Surah content based on the selected option
             var surahAlaqContent = `
@@ -363,8 +366,237 @@
         </div>
     </div>
 `;
+
+var surahFajrContent = `
+    <p>Surah Al-Fajr</p>
+	 <source src="surah_fajr.ogg" type="audio/ogg">
+     <source src="surah_fajr.mp3" type="audio/mpeg">
+	
+	<!-- Add your verses and translations for Surah Al-Fajr here -->
+<div class="quranic-style">
+    <div class="verse">
+        <span class="verse-number">()</span>
+        <div class="verse-text">
+            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+            <div class="translation">In the name of Allah, the Most Gracious, the Most Merciful.</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">1</span>
+        <div class="verse-text">
+            وَالْفَجْرِ
+            <div class="translation">By the dawn;</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">2</span>
+        <div class="verse-text">
+            وَلَيَالٍ عَشْرٍ
+            <div class="translation">And [by] ten nights</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">3</span>
+        <div class="verse-text">
+            وَالشَّفْعِ وَالْوَتْرِ
+            <div class="translation">And [by] the even [number] and the odd</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">4</span>
+        <div class="verse-text">
+            وَاللَّيْلِ إِذَا يَسْرِ
+            <div class="translation">And [by] the night when it passes,</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">5</span>
+        <div class="verse-text">
+            هَلْ فِي ذَٰلِكَ قَسَمٌ لِّذِي حِجْرٍ
+            <div class="translation">Is there [not] in [all] that an oath [sufficient] for one of perception?</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">6</span>
+        <div class="verse-text">
+            أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ
+            <div class="translation">Have you not considered how your Lord dealt with 'Aad -</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">7</span>
+        <div class="verse-text">
+            إِرَمَ ذَاتِ الْعِمَادِ
+            <div class="translation">[With] Iram - who had lofty pillars,</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">8</span>
+        <div class="verse-text">
+            الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ
+            <div class="translation">The likes of whom had never been created in the land?</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">9</span>
+        <div class="verse-text">
+            وَثَمُودَ الَّذِينَ جَابُوا الصَّخْرَ بِالْوَادِ
+            <div class="translation">And [with] Thamud, who carved out the rocks in the valley?</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">10</span>
+        <div class="verse-text">
+            وَفِرْعَوْنَ ذِي الْأَوْتَادِ
+            <div class="translation">And [with] Pharaoh, owner of the stakes? -</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">11</span>
+        <div class="verse-text">
+            الَّذِينَ طَغَوْا فِي الْبِلَادِ
+            <div class="translation">[All of] whom oppressed within the lands</div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">12</span>
+        <div class="verse-text">
+            فَأَكْثَرُوا فِيهَا الْفَسَادَ
+            <div class="translation">And increased therein the corruption.</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">13</span>
+        <div class="verse-text">
+            فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ
+            <div class="translation">So your Lord poured upon them a scourge of punishment.</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">14</span>
+        <div class="verse-text">
+            إِنَّ رَبَّكَ لَبِالْمِرْصَادِ
+            <div class="translation">Indeed, your Lord is in observation.</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">15</span>
+        <div class="verse-text">
+            فَأَمَّا الإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ
+            <div class="translation">But as for man, when his Lord tries him and [thus] is generous to him and favors him, he says, "My Lord has honored me."</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">16</span>
+        <div class="verse-text">
+            وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ
+            <div class="translation">But when He tries him and restricts his provision, he says, "My Lord has humiliated me."</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">17</span>
+        <div class="verse-text">
+            كَلاَّ بَل لَّا تُكْرِمُونَ الْيَتِيمَ
+            <div class="translation">No! But you do not honor the orphan</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">18</span>
+        <div class="verse-text">
+            وَلَا تَحَاضُّونَ عَلَى طَعَامِ الْمِسْكِينِ
+            <div class="translation">And you do not encourage one another to feed the poor.</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">19</span>
+        <div class="verse-text">
+            وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَّمًّا
+            <div class="translation">And you consume inheritance, devouring [it] altogether,</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">20</span>
+        <div class="verse-text">
+            وَتُحِبُّونَ الْمَالَ حُبًّا جَّمًّا
+            <div class="translation">And you love wealth with immense love.</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">21</span>
+        <div class="verse-text">
+            كَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا
+            <div class="translation">No! When the earth has been leveled - pounded and crushed -</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">22</span>
+        <div class="verse-text">
+            وَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا
+            <div class="translation">And your Lord has come and the angels, rank upon rank,</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">23</span>
+        <div class="verse-text">
+            وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّىٰ لَهُ الذِّكْرَىٰ
+            <div class="translation">And brought [within view], that Day, is Hell - that Day, man will remember, but what good to him will be the remembrance?</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">24</span>
+        <div class="verse-text">
+            يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي
+            <div class="translation">He will say, "Oh, I wish I had sent ahead [some good] for my life."</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">25</span>
+        <div class="verse-text">
+            فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُ أَحَدٌ
+            <div class="translation">So on that Day, none will punish [as severely] as His punishment,</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">26</span>
+        <div class="verse-text">
+            وَلَا يُوثِقُ وَثَاقَهُ أَحَدٌ
+            <div class="translation">And none will bind [as severely] as His binding [of the evildoers].</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">27</span>
+        <div class="verse-text">
+            يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ
+            <div class="translation">O peaceful soul,</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">28</span>
+        <div class="verse-text">
+            ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً
+            <div class="translation">Return to your Lord, well-pleased and pleasing [to Him],</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">29</span>
+        <div class="verse-text">
+            فَادْخُلِي فِي عِبَادِي
+            <div class="translation">And enter among My [righteous] servants</div>
+        </div>
+    </div>
+    <div class="verse">
+        <span class="verse-number">30</span>
+        <div class="verse-text">
+            وَادْخُلِي جَنَّتِي
+            <div class="translation">And enter My Paradise."</div>
+        </div>
+    </div>
+</div>
+
+	
+`;
     </script>
 </head>
+<div id="page-content">
 <body>
     <!-- Add the toggle button -->
     <i id="toggle-mode" class="fas fa-moon" onclick="toggleDarkMode()"></i>
@@ -419,6 +651,7 @@
                 <select id="surahSelector">
                     <option value="surahAlaq">Surah Al-Alaq</option>
 					<option value="surahBalad">Surah Al-Balad</option>
+					<option value="surahFajr">Surah Al-Fajr</option>
                     <!-- Add more options for other Surahs -->
                 </select>
                 <button type="submit">Go</button>
@@ -428,7 +661,17 @@
         <div id="surahContent" class="quranic-style">
             <!-- Surah content will be displayed here -->
         </div>
-    </div>
+		
+  <button onclick="scrollToTop()">Back to Top</button>
 
+</div>
+</div>
+
+<script>
+    function scrollToTop() {
+        var pageContent = document.getElementById("page-content");
+        pageContent.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 </body>
 </html>

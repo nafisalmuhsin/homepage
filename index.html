@@ -1,132 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mobilefriendly.css">
+    <link rel="stylesheet" type="text/css" href="darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <!-- Add the JavaScript code -->
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        // Check system preference and set initial mode
+        var prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (prefersDarkMode) {
+            document.body.classList.add("dark-mode");
+        }
 
+        // Function to display Surah content
+        function displaySurahContent() {
+            var surahSelector = document.getElementById("surahSelector");
+            var selectedSurah = surahSelector.value;
+            var surahContent = document.getElementById("surahContent");
+			
+			// Update the Surah content based on the selected Surah
+		if (selectedSurah === "surahAlaq") {
+		surahContent.innerHTML = surahAlaqContent;
+		}
+		else if (selectedSurah === "surahBalad") {
+		surahContent.innerHTML = surahBaladContent;
+		}
 
-  <link rel="stylesheet" type="text/css" href="mobilefriendly.css">
-  <link rel="stylesheet" type="text/css" href="darkmode.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-  <meta charset="UTF-8">
-  <title>My Personal Website</title>
-
-  
-  <!-- Add the JavaScript code -->
-  <script>
-    // Function to toggle dark mode
-    function toggleDarkMode() {
-      var body = document.body;
-      body.classList.toggle("dark-mode");
-    }
-    
-    // Check system preference and set initial mode
-    var prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    if (prefersDarkMode) {
-      document.body.classList.add("dark-mode");
-    }
-	
-  </script>
-  
-  
-</head>
-<body>
-
-  <!-- Add the toggle button -->
-  <i id="toggle-mode" class="fas fa-moon" onclick="toggleDarkMode()"></i>
-   
-<!-- Place this code where you want the dropdown navigation to appear -->
-<div class="menu">
-  <a class="menu-button" href="#">
-    <span></span>
-    <span></span>
-    <span></span>
-  </a>
-  <div class="menu-content">
-    <a href="#">Home</a>
-    <a href="#">Qur'an Follow-along</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-
-  <img src="IMG_3443.jpeg" alt="Profile Picture" class="profile-picture">
-  <h1 style="text-align: center;">Nafis Al-Muhsin</h1>
-  
-  
-  <div class="socials">
-    <a href="https://www.instagram.com/nafisalmuhsin">
-      <img src="instagram_logo.png" alt="Instagram Logo">
-      Instagram
-    </a>
-    <a href="https://www.youtube.com/@nafis_almuhsin">
-      <img src="youtube_logo.png" alt="YouTube Logo">
-      YouTube
-    </a>
-    <a href="https://www.tiktok.com/@nafis_almuhsin">
-      <img src="tiktok_logo.png" alt="TikTok Logo">
-      TikTok
-    </a>    
-	<a href="https://open.spotify.com/artist/7tboStjFJ0EZRaPlQeJLVa">
-      <img src="spotify_logo.png" alt="Spotify Logo">
-      Spotify
-    </a>
-  </div>
-  
-  <div class="bio">
-	<p> Assalamu'alaikum warahmatullahi wa barakatuh! I upload Qur'an videos on YouTube, 
-	 Instagram, and TikTok regularly. Please do make sure to follow and subscribe! I've 
-	 provided the links to all of them above.</p>
-	<button class="more">Read More</button>
-  </div>
- 
- 
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var bio = document.querySelector('.bio');
-    var paragraph = document.createElement('p');
-    var text = document.createTextNode("My goal is to encourage more people to read the Qur'an and understand its meaning in order to reap its full benefits. Another aim is to have my recitations reach as many people as possible throughout the globe on all platforms. This way, in sha' Allah, even after I'm gone, my recitations will be heard, and I'll benefit from this in my grave as Sadaqa Jariyah! And anyone who shares the Qur'an's recitations will also receive the reward of Sadaqah Jariyah. May Allah (SWT) bless every single one of you for supporting me throughout my journey!");
-    paragraph.appendChild(text);
-
-    var moreButton = document.querySelector('.more');
-    var isExpanded = false;
-
-    moreButton.addEventListener('click', function() {
-      if (isExpanded) {
-        bio.removeChild(paragraph);
-        moreButton.textContent = 'Read More';
-      } else {
-        bio.appendChild(paragraph);
-        moreButton.textContent = 'Show Less';
-      }
-
-      isExpanded = !isExpanded;
-    });
-  });
-</script>
-  
-  <div class="donate">
-  <h2>Qur'an recitations - Follow along</h3>
-  
-  <div class="navigation">
-    <select onchange="location = this.value;">
-      <option value="">Select Surah</option>
-      <option value="surah_alaq.html">Surah Al-Alaq</option>
-      <option value="surah_albalad.html">Surah Al-Balad</option>
-      <option value="surah_ar_rahman.html">Surah Ar-Rahman</option>
-    </select>
-  </div>
-  
- 
-  <p>Surah Al-Alaq</p>
-  <audio controls>
-  <source src="surah_alaq.ogg" type="audio/ogg">
-  <source src="surah_alaq.mp3" type="audio/mpeg"> 
-Your browser does not support the audio element.
-</audio>
- 
+            // Define Surah content based on the selected option
+            var surahAlaqContent = `
+                <p>Surah Al-Alaq</p>
+                <audio controls>
+                    <source src="surah_alaq.ogg" type="audio/ogg">
+                    <source src="surah_alaq.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <!-- Add your verses and translations here -->
+				 
 <div class="quranic-style">
     <div class="verse">
       <span class="verse-number">()</span>
@@ -273,7 +191,244 @@ Your browser does not support the audio element.
 
 
   </div>
+  
+  
 
-	
+            `;
+
+            // Update the Surah content based on the selected Surah
+            if (selectedSurah === "surahAlaq") {
+                surahContent.innerHTML = surahAlaqContent;
+            }
+            // Add more conditions for other Surahs if needed
+
+            return false; // Prevent the default form submission
+        }
+		
+		var surahBaladContent = `
+    <p>Surah Al-Balad</p>
+    <audio controls>
+        <source src="surah_balad.ogg" type="audio/ogg">
+        <source src="surah_balad.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- Add your verses and translations for Surah Al-Balad here -->
+    <div class="quranic-style">
+		<div class="verse">
+			<span class="verse-number">()</span>
+			<div class="verse-text">
+			بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+			<div class="translation">In the name of Allah, the Most Gracious, the Most Merciful.</div>
+		</div>
+		</div>
+        <div class="verse">
+            <span class="verse-number">1</span>
+            <div class="verse-text">
+                لَا أُقْسِمُ بِهَـٰذَا الْبَلَدِ
+                <div class="translation">I swear by this city,</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">2</span>
+            <div class="verse-text">
+                وَأَنتَ حِلٌّ بِهَـٰذَا الْبَلَدِ
+                <div class="translation">And you, [O Muhammad], are free of restriction in this city -</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">3</span>
+            <div class="verse-text">
+                وَوَالِدٍ وَمَا وَلَدَ
+                <div class="translation">And [by] the father and that which was born [of him],</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">4</span>
+            <div class="verse-text">
+                لَقَدْ خَلَقْنَا الْإِنسَانَ فِي كَبَدٍ
+                <div class="translation">We have certainly created man into hardship.</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">5</span>
+            <div class="verse-text">
+                أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ
+                <div class="translation">Does he think that never will anyone overcome him?</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">6</span>
+            <div class="verse-text">
+                يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا
+                <div class="translation">He says, "I have spent wealth in abundance."</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">7</span>
+            <div class="verse-text">
+                أَيَحْسَبُ أَن لَّمْ يَرَهُ أَحَدٌ
+                <div class="translation">Does he think that no one has seen him?</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">8</span>
+            <div class="verse-text">
+                أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ
+                <div class="translation">Have We not made for him two eyes?</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">9</span>
+            <div class="verse-text">
+                وَلِسَانًا وَشَفَتَيْنِ
+                <div class="translation">And a tongue and two lips?</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">10</span>
+            <div class="verse-text">
+                وَهَدَيْنَاهُ النَّجْدَيْنِ
+                <div class="translation">And have shown him the two ways?</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">11</span>
+            <div class="verse-text">
+                فَلَا اقْتَحَمَ الْعَقَبَةَ
+                <div class="translation">But he has not broken through the difficult pass.</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">12</span>
+            <div class="verse-text">
+                وَمَا أَدْرَاكَ مَا الْعَقَبَةُ
+                <div class="translation">And what can make you know what is [breaking through] the difficult pass?</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">13</span>
+            <div class="verse-text">
+                فَكُّ رَقَبَةٍ
+                <div class="translation">It is the freeing of a slave</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">14</span>
+            <div class="verse-text">
+                أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ
+                <div class="translation">Or feeding on a day of severe hunger</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">15</span>
+            <div class="verse-text">
+                يَتِيمًا ذَا مَقْرَبَةٍ
+                <div class="translation">An orphan of near relationship</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">16</span>
+            <div class="verse-text">
+                أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ
+                <div class="translation">Or a needy person in misery</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">17</span>
+            <div class="verse-text">
+                ثُمَّ كَانَ مِنَ الَّذِينَ آمَنُوا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِ
+                <div class="translation">Then he was among those who believed and advised one another to patience and advised one another to compassion.</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">18</span>
+            <div class="verse-text">
+                أُو۟لَـٰٓئِكَ أَصۡحَـٰبُ ٱلۡمَيۡمَنَةِ
+                <div class="translation">Those are the companions of the right.</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">19</span>
+            <div class="verse-text">
+                وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَـٰتِنَا هُمۡ أَصۡحَـٰبُ ٱلۡمَشۡـَٔمَةِ
+                <div class="translation">But they who disbelieved in Our signs - those are the companions of the left.</div>
+            </div>
+        </div>
+        <div class="verse">
+            <span class="verse-number">20</span>
+            <div class="verse-text">
+                عَلَيۡهِمۡ نَارًۭا مُّؤۡصَدَةًۭ
+                <div class="translation">Over them will be fire closed in.</div>
+            </div>
+        </div>
+    </div>
+`;
+    </script>
+</head>
+<body>
+    <!-- Add the toggle button -->
+    <i id="toggle-mode" class="fas fa-moon" onclick="toggleDarkMode()"></i>
+
+    <!-- Place this code where you want the dropdown navigation to appear -->
+    <div class="menu">
+        <a class="menu-button" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="menu-content">
+            <a href="#">Home</a>
+            <a href="#">Qur'an Follow-along</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <img src="IMG_3443.jpeg" alt="Profile Picture" class="profile-picture">
+    <h1 style="text-align: center;">Nafis Al-Muhsin</h1>
+
+    <div class="socials">
+    <a href="https://www.instagram.com/nafisalmuhsin">
+      <img src="instagram_logo.png" alt="Instagram Logo">
+      Instagram
+    </a>
+    <a href="https://www.youtube.com/@nafis_almuhsin">
+      <img src="youtube_logo.png" alt="YouTube Logo">
+      YouTube
+    </a>
+    <a href="https://www.tiktok.com/@nafis_almuhsin">
+      <img src="tiktok_logo.png" alt="TikTok Logo">
+      TikTok
+    </a>    
+	<a href="https://open.spotify.com/artist/7tboStjFJ0EZRaPlQeJLVa">
+      <img src="spotify_logo.png" alt="Spotify Logo">
+      Spotify
+    </a>
+  </div>
+
+    <div class="bio">
+        <p>Assalamu'alaikum warahmatullahi wa barakatuh! I upload Qur'an videos on YouTube,
+            Instagram, and TikTok regularly. Please do make sure to follow and subscribe! I've
+            provided the links to all of them above.</p>
+        <button class="more">Read More</button>
+    </div>
+
+    <div class="donate">
+        <h2>Qur'an recitations - Follow along</h2>
+        <div class="navigation">
+            <form onsubmit="return displaySurahContent()">
+                <select id="surahSelector">
+                    <option value="surahAlaq">Surah Al-Alaq</option>
+					<option value="surahBalad">Surah Al-Balad</option>
+                    <!-- Add more options for other Surahs -->
+                </select>
+                <button type="submit">Go</button>
+            </form>
+        </div>
+
+        <div id="surahContent" class="quranic-style">
+            <!-- Surah content will be displayed here -->
+        </div>
+    </div>
+
 </body>
 </html>

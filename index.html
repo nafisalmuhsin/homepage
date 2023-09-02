@@ -38,6 +38,8 @@
 		surahContent.innerHTML = surahFajrContent;
 		}
 
+		return false;
+
             // Define Surah content based on the selected option
             var surahAlaqContent = `
                 <p>Surah Al-Alaq</p>
@@ -200,13 +202,13 @@
             `;
 
             // Update the Surah content based on the selected Surah
-            if (selectedSurah === "surahAlaq") {
-                surahContent.innerHTML = surahAlaqContent;
-            }
+       //    if (selectedSurah === "surahAlaq") {
+       //         surahContent.innerHTML = surahAlaqContent;
+    //        }
             // Add more conditions for other Surahs if needed
 
-            return false; // Prevent the default form submission
-        }
+     //       return false; // Prevent the default form submission
+   //     }
 		
 		var surahBaladContent = `
     <p>Surah Al-Balad</p>
@@ -367,13 +369,7 @@
     </div>
     
 `;
-if (selectedSurah === "surahBalad") {
-                surahContent.innerHTML = surahBaladContent;
-            }
-            // Add more conditions for other Surahs if needed
 
-            return false; // Prevent the default form submission
-        }
 
 	    
 var surahFajrContent = `

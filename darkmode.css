@@ -135,3 +135,17 @@ body.dark-mode .menu-content {
 body.dark-mode .menu-content a{
 	color: white;
 }
+
+/* Styles for the Showcase class in dark mode */
+body.dark-mode .Showcase {
+  background-color: #333; /* Dark background color */
+  color: #f5f5f5; /* Light text color */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .Showcase h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+/* Add more styles as needed for your Showcase content in dark mode */

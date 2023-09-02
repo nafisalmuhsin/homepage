@@ -285,6 +285,15 @@ border-radius: 4px;
   margin-bottom: 20px;
   border-radius: 5px;
   display: block;
+}	
+.Showcase iframe {
+  max-width: 100%; /* Make sure the iframe doesn't exceed the width of its container */
+  height: auto; /* Allow the iframe's height to adjust proportionally */
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: block;
+	
 }
 
   .bio {

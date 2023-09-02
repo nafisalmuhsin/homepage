@@ -278,6 +278,15 @@ border-radius: 4px;
     font-size: 14px;
   }
 
+.donate iframe {
+  max-width: 100%; /* Make sure the iframe doesn't exceed the width of its container */
+  height: auto; /* Allow the iframe's height to adjust proportionally */
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: block;
+}
+
   .bio {
     margin: 10px;
     padding: 10px;

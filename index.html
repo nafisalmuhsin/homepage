@@ -365,8 +365,17 @@
             </div>
         </div>
     </div>
+    
 `;
+if (selectedSurah === "surahBalad") {
+                surahContent.innerHTML = surahBaladContent;
+            }
+            // Add more conditions for other Surahs if needed
 
+            return false; // Prevent the default form submission
+        }
+
+	    
 var surahFajrContent = `
     <p>Surah Al-Fajr</p>
 	 <source src="surah_fajr.ogg" type="audio/ogg">

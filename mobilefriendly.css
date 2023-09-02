@@ -350,3 +350,30 @@ border-radius: 4px;
   font-size: 24px; /* Adjust the font size as needed */
   margin-bottom: 20px; /* Add spacing below the heading */
 }
+
+
+/* Add this CSS for the "Back to Top" button icon */
+/* Style the specific "Back to Top" button */
+/* Style the specific "Back to Top" button */
+#backToTopButton {
+    background-color: rgba(249, 249, 249, 0.3); /* Set the background color to 30% transparent white */
+    color: transparent; /* Set the text color to transparent */
+    border: none;
+    text-align: center;
+    border-radius: 5px; /* Makes the button round */
+    padding: 5px 6px; /* Adjust padding for size */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#backToTopButton i {
+    font-size: 16px; /* Adjust icon size as desired */
+    color: rgba(0, 0, 0, 0.6); /* Set the arrow icon color to black with 60% transparency */
+}
+
+#backToTopButton:hover {
+    background-color: rgba(211, 211, 211, 0.6); /* Change the hover background color to 60% transparent grey */
+}

@@ -149,3 +149,17 @@ body.dark-mode .Showcase h2 {
 }
 
 /* Add more styles as needed for your Showcase content in dark mode */
+
+/* Dark mode styles */
+body.dark-mode #backToTopButton {
+    background-color: rgba(0, 0, 0, 0.6); /* Set the background color to 60% transparent black in dark mode */
+}
+
+body.dark-mode #backToTopButton i {
+    color: rgba(255, 255, 255, 0.6); /* Set the arrow icon color to white with 60% transparency in dark mode */
+}
+
+body.dark-mode #backToTopButton:hover {
+    background-color: rgba(68, 68, 68, 0.6); /* Change the hover background color to 60% transparent dark grey in dark mode */
+}
+

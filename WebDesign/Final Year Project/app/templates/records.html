@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <h2 class="my-4">Your Patient Medical Records</h2>
+
+    <!-- “New Record” Card -->
+    <div class="card mb-5">
+      <div class="card-header">
+        <strong>Add New Record</strong>
+      </div>
+      <div class="card-body">
+        <form method="POST" novalidate>
+          {{ form.hidden_tag() }}
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              {{ form.patient_name.label(class="form-label") }}
+              {{ form.patient_name(class="form-control") }}
+            </div>
+            <div class="col-md-6 mb-3">
+              {{ form.patient_email.label(class="form-label") }}
+              {{ form.patient_email(class="form-control") }}
+               {% for error in form.patient_email.errors %}
+            <div class="text-danger">{{ error }}</div>
+             {% endfor %}
+            </div>
+
+          <div class="mb-3">
+            {{ form.address.label(class="form-label") }}
+            {{ form.address(class="form-control") }}
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              {{ form.date_of_birth.label(class="form-label") }}
+              {{ form.date_of_birth(class="form-control") }}
+            </div>
+            <div class="col-md-4 mb-3">
+              {{ form.gender.label(class="form-label") }}
+              {{ form.gender(class="form-select") }}
+            </div>
+            <div class="col-md-4 mb-3">
+              {{ form.provider_name.label(class="form-label") }}
+              {{ form.provider_name(class="form-control") }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              {{ form.allergies.label(class="form-label") }}
+              {{ form.allergies(class="form-control") }}
+            </div>
+            <div class="col-md-6 mb-3">
+              {{ form.medications.label(class="form-label") }}
+              {{ form.medications(class="form-control") }}
+            </div>
+          </div>
+
+          <div class="mb-3">
+            {{ form.diagnosis.label(class="form-label") }}
+            {{ form.diagnosis(class="form-control", rows="4") }}
+          </div>
+
+          <button type="submit" class="btn btn-primary">{{ form.submit.label.text }}</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- “Saved Records” List -->
+    <h3 class="mb-3">Saved Records</h3>
+    {% if records %}
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for record in records %}
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">{{ record.patient_name }}
+                  <small class="text-muted">({{ record.patient_email }})</small>
+                </h5>
+                <p class="card-text">
+                  <strong>DOB:</strong> {{ record.date_of_birth }}<br>
+                  <strong>Gender:</strong> {{ record.gender }}<br>
+                  <strong>Address:</strong> {{ record.address }}<br>
+                  <strong>Provider:</strong> {{ record.provider_name }}
+                </p>
+                <p class="card-text">
+                  <strong>Allergies:</strong> {{ record.allergies or 'None' }}<br>
+                  <strong>Medications:</strong> {{ record.medications or 'None' }}
+                </p>
+                <p class="card-text"><strong>Diagnosis:</strong> {{ record.diagnosis }}</p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <small class="text-muted">Created: {{ record.date_created.strftime('%Y-%m-%d') }}</small>
+                <div>
+                  <a href="{{ url_for('main.edit_record', record_id=record.id) }}"
+                     class="btn btn-sm btn-warning me-2">Edit</a>
+                  <form action="{{ url_for('main.delete_record', record_id=record.id) }}"
+                        method="POST" class="d-inline">
+                    {{ form.csrf_token }}
+                    <button type="submit"
+                            class="btn btn-sm btn-danger"
+                            onclick="return confirm('Delete this record?');">
+                      Delete
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No records found.</p>
+    {% endif %}
+  </div>
+{% endblock %}

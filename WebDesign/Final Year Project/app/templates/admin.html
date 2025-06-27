@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}Admin Panel{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h1 class="mb-4">Admin Panel</h1>
+  <p class="lead">Hello, <strong>{{ current_user.username }}</strong>. Here are all registered users:</p>
+  <small>Below you can update roles or delete users</small>
+
+  <table class="table table-striped table-hover align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Change Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for u in users %}
+      <tr>
+        <td>{{ u.id }}</td>
+        <td>{{ u.username }}</td>
+        <td>{{ u.email }}</td>
+        <td>{{ u.role }}</td>
+        <td>
+          {% if u.id != current_user.id %}
+          <form method="POST" action="{{ url_for('main.change_role', user_id=u.id) }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <div class="input-group">
+              <select name="role" class="form-select form-select-sm">
+                <option value="user" {% if u.role == 'user' %}selected{% endif %}>User</option>
+                <option value="admin" {% if u.role == 'admin' %}selected{% endif %}>Admin</option>
+              </select>
+              <button type="submit" class="btn btn-sm btn-primary">Update</button>
+            </div>
+          </form>
+          {% else %}
+          <span class="text-muted">N/A (You)</span>
+          {% endif %}
+        </td>
+        <td>
+          {% if u.id != current_user.id %}
+          <form action="{{ url_for('main.delete_user', user_id=u.id) }}" method="POST" style="display:inline;">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <button type="submit" class="btn btn-danger btn-sm"
+                    onclick="return confirm('Are you sure you want to delete this user?');">
+              Delete
+            </button>
+          </form>
+          {% else %}
+          <span class="text-muted">Cannot delete yourself</span>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

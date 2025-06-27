@@ -1,0 +1,325 @@
+2025-05-06 22:27:03,821 INFO: Application started
+2025-05-06 22:27:46,087 INFO: Application started
+2025-05-06 22:28:53,133 INFO: Application started
+2025-05-06 22:30:37,073 INFO: Application started
+2025-05-06 22:33:48,523 INFO: Application started
+2025-05-06 22:33:49,559 INFO: Application started
+2025-05-06 22:39:20,085 INFO: Application started
+2025-05-06 22:50:09,784 INFO: Application started
+2025-05-06 22:50:24,331 INFO: Application started
+2025-05-06 22:50:25,327 INFO: Application started
+2025-05-06 22:56:55,841 INFO: Application started
+2025-05-06 22:56:56,807 INFO: Application started
+2025-05-06 23:00:29,288 INFO: Application started
+2025-05-06 23:08:02,417 INFO: Application started
+2025-05-06 23:08:05,815 INFO: Logout: user_id=3
+2025-05-07 01:58:50,893 INFO: Application started
+2025-05-07 01:58:51,911 INFO: Application started
+2025-05-07 02:07:34,911 INFO: Application started
+2025-05-07 02:07:35,930 INFO: Application started
+2025-05-07 02:08:40,616 INFO: Application started
+2025-05-07 02:08:41,559 INFO: Application started
+2025-05-07 02:08:53,146 INFO: Application started
+2025-05-07 02:10:14,355 INFO: Create Record: user_id=3, record_id=3
+2025-05-07 02:10:40,728 INFO: Delete Record: user_id=3, record_id=3
+2025-05-07 02:10:55,940 INFO: Create Record: user_id=3, record_id=3
+2025-05-07 02:11:07,974 INFO: Logout: user_id=3
+2025-05-07 02:11:17,359 INFO: Login: user_id=3, email=admin@gmail.com
+2025-05-07 02:20:44,164 INFO: Application started
+2025-05-07 02:22:20,519 INFO: Application started
+2025-05-07 02:22:24,124 INFO: Application started
+2025-05-07 02:22:25,185 INFO: Application started
+2025-05-07 02:25:13,921 INFO: Application started
+2025-05-07 02:25:14,905 INFO: Application started
+2025-05-07 02:25:49,555 INFO: Create Record: user_id=3, record_id=4
+2025-05-07 02:32:51,045 INFO: Application started
+2025-05-07 02:32:52,161 INFO: Application started
+2025-05-07 02:33:06,930 INFO: Logout: user_id=3
+2025-05-07 02:33:21,486 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:33:24,724 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:33:26,939 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:33:30,411 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:33:34,186 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:33:40,958 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:33:54,040 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:33:59,892 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:35:27,369 INFO: Application started
+2025-05-07 02:35:37,619 INFO: Application started
+2025-05-07 02:35:38,809 INFO: Application started
+2025-05-07 02:35:54,127 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:35:57,363 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:36:02,340 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:36:18,862 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:36:22,790 WARNING: Failed login attempt: email=a@gmail.com
+2025-05-07 02:37:43,580 INFO: Login: user_id=3, email=admin@gmail.com
+2025-05-07 03:10:30,993 INFO: Application started
+2025-05-07 03:18:03,196 INFO: Application started
+2025-05-07 03:18:04,413 INFO: Application started
+2025-05-07 03:19:00,561 INFO: Application started
+2025-05-07 03:22:54,943 INFO: Application started
+2025-05-07 03:22:56,132 INFO: Application started
+2025-05-07 22:01:32,240 INFO: Application started
+2025-05-07 22:03:37,258 INFO: Application started
+2025-05-07 22:03:38,527 INFO: Application started
+2025-05-07 22:10:26,731 INFO: Application started
+2025-05-07 22:10:27,870 INFO: Application started
+2025-05-07 23:20:33,158 INFO: Logout: user_id=3
+2025-05-07 23:20:51,313 INFO: Login: user_id=4, email=user2@gmail.com
+2025-05-07 23:21:41,940 INFO: Logout: user_id=4
+2025-05-07 23:22:43,073 INFO: Login: user_id=3, email=admin@gmail.com
+2025-05-07 23:37:36,044 INFO: Application started
+2025-05-07 23:41:47,234 INFO: Application started
+2025-05-07 23:44:09,618 INFO: Application started
+2025-05-07 23:47:39,464 INFO: Application started
+2025-05-08 05:16:21,970 INFO: Application started
+2025-05-08 05:16:24,192 INFO: Application started
+2025-05-08 05:16:49,730 INFO: Login: user_id=3, email=admin@gmail.com
+2025-05-08 05:29:52,611 INFO: Application started
+2025-05-08 05:30:53,157 INFO: Application started
+2025-05-08 05:30:58,378 INFO: Application started
+2025-05-08 05:33:38,721 INFO: Application started
+2025-05-08 05:45:35,922 INFO: Application started
+2025-05-08 05:45:38,022 INFO: Application started
+2025-05-08 05:51:25,212 INFO: Application started
+2025-05-08 05:51:53,656 INFO: Application started
+2025-05-08 05:51:55,758 INFO: Application started
+2025-05-08 06:04:26,260 INFO: Application started
+2025-05-08 17:24:47,897 INFO: Application started
+2025-05-08 17:24:49,137 INFO: Application started
+2025-05-08 17:35:53,689 INFO: Application started
+2025-05-08 20:28:12,385 INFO: Application started
+2025-05-08 20:31:24,366 INFO: Application started
+2025-05-08 20:31:39,845 INFO: Application started
+2025-05-08 20:37:51,671 INFO: Application started
+2025-05-08 20:38:42,822 INFO: Application started
+2025-05-08 20:38:42,822 INFO: Application started
+2025-05-08 20:39:39,253 INFO: Application started
+2025-05-08 20:39:41,445 INFO: Application started
+2025-05-08 20:39:50,305 WARNING: Failed login attempt: email=admin@gmail.com
+2025-05-08 21:03:18,436 INFO: Application started
+2025-05-08 21:04:24,496 INFO: User registered: user_id=1, email=rayand@gmail.com
+2025-05-08 21:04:41,316 INFO: Login: user_id=1, email=rayand@gmail.com
+2025-05-08 21:13:06,751 INFO: Application started
+2025-05-08 21:17:54,342 INFO: Application started
+2025-05-08 21:18:37,684 INFO: Logout: user_id=1
+2025-05-08 21:18:52,707 INFO: Login: user_id=2, email=admin@example.com
+2025-05-09 17:16:27,431 INFO: Application started
+2025-05-09 17:16:29,452 INFO: Application started
+2025-05-09 17:16:39,521 INFO: Logout: user_id=2
+2025-05-09 17:17:08,457 INFO: Login: user_id=2, email=admin@example.com
+2025-05-09 19:24:11,158 INFO: Application started
+2025-05-09 19:35:29,590 INFO: Application started
+2025-05-09 19:35:30,706 INFO: Application started
+2025-05-09 19:37:45,167 INFO: Application started
+2025-05-09 19:37:46,309 INFO: Application started
+2025-05-09 19:44:26,647 INFO: Application started
+2025-05-09 19:44:57,007 INFO: Application started
+2025-05-09 20:13:23,740 INFO: Application started
+2025-05-09 20:22:46,935 INFO: Logout: user_id=2
+2025-05-09 20:23:01,696 INFO: Login: user_id=1, email=rayand@gmail.com
+2025-05-09 20:52:51,519 INFO: Application started
+2025-05-09 20:52:51,807 INFO: Create Record: user_id=1, record_id=1
+2025-05-09 20:54:07,482 INFO: Logout: user_id=1
+2025-05-09 20:54:22,835 INFO: Login: user_id=2, email=admin@example.com
+2025-05-09 21:09:47,390 INFO: Application started
+2025-05-09 21:19:21,722 INFO: Application started
+2025-05-09 21:19:23,775 INFO: Application started
+2025-05-09 22:48:19,701 INFO: Application started
+2025-05-09 22:48:21,870 INFO: Application started
+2025-05-09 22:49:50,656 INFO: Logout: user_id=2
+2025-05-09 22:55:42,653 INFO: User registered: user_id=3, email=aleenak@gmail.com
+2025-05-09 22:56:13,226 INFO: Login: user_id=3, email=aleenak@gmail.com
+2025-05-09 23:26:43,009 INFO: Create Record: user_id=3, record_id=2
+2025-05-09 23:26:47,144 INFO: Logout: user_id=3
+2025-05-09 23:27:16,018 INFO: Login: user_id=2, email=admin@example.com
+2025-05-10 01:14:32,437 INFO: Application started
+2025-05-10 01:14:33,596 INFO: Application started
+2025-05-10 01:16:31,950 INFO: Role Change: admin_id=2, target_user_id=1, from=user to=admin
+2025-05-10 01:16:40,292 INFO: Role Change: admin_id=2, target_user_id=1, from=admin to=user
+2025-05-10 01:25:19,124 INFO: Application started
+2025-05-10 01:30:48,927 INFO: Application started
+2025-05-10 01:30:50,091 INFO: Application started
+2025-05-10 01:32:40,850 INFO: Application started
+2025-05-10 01:32:41,909 INFO: Application started
+2025-05-10 01:36:11,167 INFO: Application started
+2025-05-10 02:39:27,791 INFO: Application started
+2025-05-10 02:39:28,912 INFO: Application started
+2025-05-10 03:02:24,598 INFO: Logout: user_id=2
+2025-05-10 03:02:51,433 WARNING: Failed login attempt: email=admin2@xmail.com
+2025-05-10 03:03:14,125 INFO: User registered: user_id=4, email=admin2@xmail.com
+2025-05-10 03:03:47,008 INFO: Login: user_id=4, email=admin2@xmail.com
+2025-05-10 03:04:16,311 INFO: Logout: user_id=4
+2025-05-10 03:04:44,241 INFO: Login: user_id=4, email=admin2@xmail.com
+2025-05-10 03:06:03,004 INFO: Login: user_id=2, email=admin@example.com
+2025-05-10 03:06:37,087 INFO: Role Change: admin_id=2, target_user_id=4, from=user to=admin
+2025-05-10 18:53:44,933 INFO: Application started
+2025-05-10 18:53:47,084 INFO: Application started
+2025-05-10 18:55:30,316 INFO: Application started
+2025-05-10 18:55:32,439 INFO: Application started
+2025-05-10 19:08:23,583 INFO: Application started
+2025-05-10 19:08:25,845 INFO: Application started
+2025-05-10 19:56:09,489 INFO: Login: user_id=4, email=admin2@xmail.com
+2025-05-10 20:38:35,008 INFO: Application started
+2025-05-10 20:38:37,326 INFO: Application started
+2025-05-10 20:42:57,466 INFO: Application started
+2025-05-10 20:43:11,816 INFO: Application started
+2025-05-10 20:43:38,101 INFO: Application started
+2025-05-10 20:44:08,429 INFO: Application started
+2025-05-10 20:44:26,065 INFO: Application started
+2025-05-10 20:45:20,059 INFO: Application started
+2025-05-10 20:45:27,868 INFO: Application started
+2025-05-10 22:05:39,672 INFO: Application started
+2025-05-10 22:07:15,195 INFO: Application started
+2025-05-10 22:09:32,226 INFO: Logout: user_id=2
+2025-05-10 22:21:42,651 INFO: Application started
+2025-05-10 22:22:51,770 INFO: Application started
+2025-05-10 22:23:47,891 INFO: Application started
+2025-05-10 22:23:50,144 INFO: Application started
+2025-05-10 22:59:27,228 INFO: Application started
+2025-05-10 23:00:49,467 INFO: Application started
+2025-05-10 23:02:21,031 INFO: Application started
+2025-05-10 23:03:45,360 INFO: Application started
+2025-05-10 23:07:39,967 INFO: Application started
+2025-05-10 23:07:48,931 INFO: Application started
+2025-05-10 23:08:33,420 INFO: Application started
+2025-05-10 23:18:51,872 INFO: Application started
+2025-05-10 23:19:36,204 INFO: Application started
+2025-05-10 23:22:47,239 INFO: Application started
+2025-05-10 23:30:50,438 INFO: Application started
+2025-05-10 23:30:52,683 INFO: Application started
+2025-05-10 23:31:29,548 INFO: Application started
+2025-05-10 23:33:04,841 INFO: Application started
+2025-05-10 23:33:23,302 INFO: Application started
+2025-05-10 23:33:33,223 INFO: Application started
+2025-05-11 00:05:52,530 INFO: Application started
+2025-05-11 00:09:39,657 INFO: Application started
+2025-05-11 00:10:10,026 INFO: Application started
+2025-05-11 00:10:18,667 INFO: Application started
+2025-05-11 00:11:59,335 INFO: Application started
+2025-05-11 00:12:21,930 INFO: Application started
+2025-05-11 00:12:23,100 INFO: Application started
+2025-05-11 00:17:31,577 INFO: Application started
+2025-05-11 00:18:22,901 INFO: Application started
+2025-05-11 00:19:19,431 INFO: Application started
+2025-05-11 00:20:43,710 INFO: Application started
+2025-05-11 00:48:32,302 INFO: Application started
+2025-05-11 00:48:33,455 INFO: Application started
+2025-05-11 00:51:16,991 INFO: Application started
+2025-05-11 00:51:18,118 INFO: Application started
+2025-05-11 00:51:41,191 INFO: Application started
+2025-05-11 00:57:56,184 INFO: Application started
+2025-05-11 00:57:57,324 INFO: Application started
+2025-05-11 01:05:13,901 INFO: Application started
+2025-05-11 01:07:17,941 INFO: Login: user_id=2, email=admin@example.com
+2025-05-11 01:16:43,357 INFO: Logout: user_id=2
+2025-05-11 01:51:15,577 INFO: Application started
+2025-05-11 01:56:24,441 INFO: User registered: user_id=5, email=user3@user.com
+2025-05-11 01:56:39,241 INFO: Login: user_id=5, email=user3@user.com
+2025-05-11 01:58:34,551 INFO: Logout: user_id=5
+2025-05-11 01:59:28,871 INFO: Login: user_id=2, email=admin@example.com
+2025-05-11 02:15:28,327 INFO: Logout: user_id=2
+2025-05-11 02:15:40,138 INFO: Login: user_id=2, email=admin@example.com
+2025-05-11 02:42:46,137 INFO: Application started
+2025-05-11 02:43:35,174 INFO: Application started
+2025-05-11 02:44:01,357 INFO: Application started
+2025-05-11 02:45:33,117 INFO: Application started
+2025-05-11 02:46:06,855 INFO: Application started
+2025-05-11 02:47:01,202 INFO: Application started
+2025-05-11 02:47:09,434 INFO: Login: user_id=2, email=admin@example.com
+2025-05-11 02:49:07,894 INFO: Application started
+2025-05-11 02:50:39,376 INFO: Application started
+2025-05-11 02:51:22,372 INFO: Application started
+2025-05-11 02:52:37,273 INFO: Application started
+2025-05-11 02:53:12,243 INFO: Application started
+2025-05-11 02:53:39,505 INFO: Application started
+2025-05-11 02:54:24,479 INFO: Application started
+2025-05-11 04:39:30,353 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 00:06:39,232 INFO: Application started
+2025-05-12 00:06:41,519 INFO: Application started
+2025-05-12 00:25:41,171 INFO: Application started
+2025-05-12 00:44:37,608 INFO: User registered: user_id=6, email=admin6@xmail.com
+2025-05-12 00:44:56,555 WARNING: Failed login attempt: email=adminsix@xmail.com
+2025-05-12 00:45:06,798 WARNING: Failed login attempt: email=adminsix@xmail.com
+2025-05-12 00:45:26,336 INFO: Login: user_id=6, email=admin6@xmail.com
+2025-05-12 01:27:34,763 INFO: Application started
+2025-05-12 01:27:37,014 INFO: Application started
+2025-05-12 01:32:34,866 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 01:33:56,883 INFO: Logout: user_id=2
+2025-05-12 01:35:56,034 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 01:35:59,399 INFO: Logout: user_id=2
+2025-05-12 02:47:54,520 INFO: Application started
+2025-05-12 02:47:57,023 INFO: Application started
+2025-05-12 06:01:16,663 INFO: Application started
+2025-05-12 06:01:17,959 INFO: Application started
+2025-05-12 06:02:23,007 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 06:03:14,700 INFO: Logout: user_id=2
+2025-05-12 16:46:10,242 INFO: Application started
+2025-05-12 16:46:11,520 INFO: Application started
+2025-05-12 17:21:13,447 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 17:21:15,814 INFO: Logout: user_id=2
+2025-05-12 17:24:35,166 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 17:24:43,316 INFO: Logout: user_id=2
+2025-05-12 17:38:24,257 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 17:38:26,204 INFO: Logout: user_id=2
+2025-05-12 17:50:48,958 INFO: Application started
+2025-05-12 17:55:12,500 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 18:09:45,565 INFO: Application started
+2025-05-12 18:09:46,930 INFO: Application started
+2025-05-12 18:09:47,022 INFO: Logout: user_id=2
+2025-05-12 18:09:47,022 INFO: Logout: user_id=2
+2025-05-12 18:31:38,767 INFO: Application started
+2025-05-12 18:31:40,253 INFO: Application started
+2025-05-12 18:33:50,328 WARNING: Failed login attempt: email=user123x!@mmail.com
+2025-05-12 18:35:29,319 INFO: Application started
+2025-05-12 18:36:01,625 INFO: Application started
+2025-05-12 18:36:52,541 WARNING: Failed login attempt: email=user123x!@mmail.com
+2025-05-12 18:37:39,880 INFO: User registered: user_id=7, email=user123x!@mmail.com
+2025-05-12 18:38:22,121 INFO: Login: user_id=7, email=user123x!@mmail.com
+2025-05-12 18:38:31,988 INFO: Logout: user_id=7
+2025-05-12 19:48:51,944 INFO: Application started
+2025-05-12 20:24:28,259 INFO: Login: user_id=2, email=admin@example.com
+2025-05-12 20:49:51,038 INFO: Application started
+2025-05-12 20:49:52,289 INFO: Application started
+2025-05-12 20:50:46,638 INFO: Logout: user_id=2
+2025-05-12 20:54:08,376 INFO: Application started
+2025-05-12 20:54:28,684 INFO: Login: user_id=3, email=aleenak@gmail.com
+2025-05-12 20:54:50,047 INFO: Logout: user_id=3
+2025-05-12 20:55:21,881 INFO: Application started
+2025-05-13 19:39:11,689 INFO: Application started
+2025-05-13 19:39:13,000 INFO: Application started
+2025-05-13 19:40:17,617 INFO: Application started
+2025-05-13 19:44:28,572 INFO: Application started
+2025-05-13 19:44:33,114 INFO: Login: user_id=3, email=aleenak@gmail.com
+2025-05-13 19:53:09,191 INFO: Application started
+2025-05-13 19:53:10,524 INFO: Application started
+2025-05-13 19:53:23,077 INFO: Logout: user_id=3
+2025-05-13 19:56:46,754 INFO: Application started
+2025-05-13 19:56:47,437 INFO: Application started
+2025-05-13 19:56:47,999 INFO: Application started
+2025-05-13 22:30:19,812 INFO: Application started
+2025-05-13 22:30:21,095 INFO: Application started
+2025-05-14 00:23:07,411 INFO: Application started
+2025-05-14 03:22:44,030 INFO: Application started
+2025-05-14 03:23:36,200 INFO: Application started
+2025-05-14 17:36:48,538 INFO: Application started
+2025-05-14 17:36:50,735 INFO: Application started
+2025-05-14 17:38:05,517 INFO: Login: user_id=2, email=admin@example.com
+2025-05-15 10:44:10,906 INFO: Application started
+2025-05-15 10:44:12,190 INFO: Application started
+2025-05-15 10:44:52,553 INFO: Login: user_id=3, email=aleenak@gmail.com
+2025-05-15 10:44:54,777 INFO: Logout: user_id=3
+2025-05-15 10:46:41,313 INFO: Application started
+2025-05-15 10:47:38,654 INFO: Application started
+2025-05-15 10:47:51,823 INFO: Application started
+2025-05-15 10:48:47,690 INFO: Application started
+2025-05-15 10:48:49,005 INFO: Application started
+2025-05-15 10:49:02,427 INFO: Application started
+2025-05-15 10:49:03,860 INFO: Application started
+2025-05-15 10:49:14,088 INFO: Login: user_id=3, email=aleenak@gmail.com
+2025-05-15 10:49:16,138 INFO: Logout: user_id=3
+2025-05-15 10:55:20,856 INFO: Application started
+2025-05-15 11:00:03,179 INFO: Application started
+2025-05-15 11:00:17,197 INFO: Application started
+2025-05-15 11:00:31,796 INFO: Login: user_id=3, email=aleenak@gmail.com
+2025-05-15 11:02:39,344 INFO: Application started
+2025-05-15 11:02:40,586 INFO: Application started

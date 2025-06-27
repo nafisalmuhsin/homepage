@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Printable Medical Records</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+    }
+
+
+    .header-bar {
+      background-color: #0d6efd;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      border-radius: 0.375rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .header-bar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .header-bar small {
+      font-size: 0.9rem;
+
+    }
+
+
+    .records-table {
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 0.25rem;
+      overflow: hidden;
+    }
+    .records-table th {
+      background-color: #0d6efd;
+      color: #fff;
+      border-bottom: 2px solid #0b5ed7;
+    }
+    .records-table td, .records-table th {
+      padding: 0.75rem;
+      vertical-align: middle;
+    }
+    .records-table tbody tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+    .records-table tbody tr:hover {
+      background-color: #e9f2ff;
+    }
+
+    @media print {
+      .no-print { display: none !important; }
+      body { background: #fff; padding: 0.5rem; }
+      .records-table th {
+        background-color: #ccc !important;
+        color: #000 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header-bar no-print">
+    <a href="{{ url_for('main.admin_records') }}">
+      <i class="fas fa-arrow-left"></i> Back to Admin Records
+    </a>
+    <small>🖨️ Use <strong>Ctrl+P</strong> to print</small>
+  </div>
+
+  <h2 class="mb-4 text-primary">Medical Records</h2>
+
+  {% if records %}
+    <div class="table-responsive records-table">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Patient Name</th>
+            <th>Diagnosis</th>
+            <th>Author</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for record in records %}
+            <tr>
+              <td>{{ record.id }}</td>
+              <td>{{ record.patient_name }}</td>
+              <td>{{ record.diagnosis }}</td>
+              <td>{{ record.author.username }}</td>
+              <td>{{ record.date_created.strftime('%Y-%m-%d') }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="alert alert-info">No records found.</div>
+  {% endif %}
+</body>
+</html>

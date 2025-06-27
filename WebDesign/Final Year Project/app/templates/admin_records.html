@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="mb-3">
+ <a href="{{ url_for('main.print_records') }}{% if q %}?q={{ q }}{% endif %}" class="btn btn-secondary" target="_blank">
+    🖨️ Printable View
+  </a>
+</div>
+
+<!-- Search Form -->
+<form method="GET" class="mb-3">
+  <div class="input-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search by patient or user..."
+      name="q"
+      value="{{ q }}"
+    >
+    <button class="btn btn-outline-secondary" type="submit">Search</button>
+  </div>
+</form>
+
+<div class="container mt-5">
+
+  {% if records %}
+    <h2 class="mb-4">Medical Record Summaries</h2>
+    <div class="list-group mb-4">
+      {% for record in records %}
+        <div class="list-group-item">
+          <h5>{{ record.patient_name }}
+            <small class="text-muted">({{ record.author.username }})</small>
+          </h5>
+          <p><strong>Email:</strong> {{ record.patient_email }}</p>
+          <p><strong>Address:</strong> {{ record.address }}</p>
+          <p><strong>DOB:</strong> {{ record.date_of_birth }}</p>
+          <p><strong>Gender:</strong> {{ record.gender }}</p>
+          <p><strong>Allergies:</strong> {{ record.allergies }}</p>
+          <p><strong>Medications:</strong> {{ record.medications }}</p>
+          <p><strong>Provider:</strong> {{ record.provider_name }}</p>
+          <p><strong>Diagnosis:</strong> {{ record.diagnosis }}</p>
+          <p><strong>Date Created:</strong> {{ record.date_created.strftime('%Y-%m-%d') }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <h2 class="mb-4">All Medical Records (Table View)</h2>
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Patient Name</th>
+          <th>Email</th>
+          <th>DOB</th>
+          <th>Gender</th>
+          <th>Allergies</th>
+          <th>Medications</th>
+          <th>Diagnosis</th>
+          <th>Author</th>
+          <th>Date Created</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for record in records %}
+        <tr>
+          <td>{{ record.id }}</td>
+          <td>{{ record.patient_name }}</td>
+          <td>{{ record.patient_email }}</td>
+          <td>{{ record.date_of_birth }}</td>
+          <td>{{ record.gender }}</td>
+          <td>{{ record.allergies }}</td>
+          <td>{{ record.medications }}</td>
+          <td>{{ record.diagnosis }}</td>
+          <td>{{ record.author.username }}</td>
+          <td>{{ record.date_created.strftime('%Y-%m-%d') }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No medical records found.</p>
+  {% endif %}
+
+</div>
+{% endblock %}

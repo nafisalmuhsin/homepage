@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+  <h2 class="mb-4">Login</h2>
+  <form method="POST" class="w-50 mx-auto" >
+    {{ form.hidden_tag() }}
+
+    <div class="mb-3">
+      {{ form.email.label(class="form-label") }}
+      {{ form.email(class="form-control") }}
+      {% for err in form.email.errors %}
+        <div class="text-danger small">{{ err }}</div>
+      {% endfor %}
+    </div>
+
+    <div class="mb-3">
+      {{ form.password.label(class="form-label") }}
+      {{ form.password(class="form-control") }}
+      {% for err in form.password.errors %}
+        <div class="text-danger small">{{ err }}</div>
+      {% endfor %}
+    </div>
+
+    <div class="form-check mb-3">
+      {{ form.remember(class="form-check-input") }}
+      {{ form.remember.label(class="form-check-label") }}
+    </div>
+
+<div class="mb-3" style="min-height: 90px;">
+  <label class="form-label">reCAPTCHA</label>
+  <div class="g-recaptcha" data-sitekey="6LfCMjUrAAAAADeXvwD2oA4XUhzOx6i6T2Wg9aQO"></div>
+  {% for err in form.recaptcha.errors %}
+    <div class="text-danger small">{{ err }}</div>
+  {% endfor %}
+</div>
+
+
+
+    <button type="submit" class="btn btn-primary">{{ form.submit.label.text }}</button>
+  </form>
+
+  {# Load the recaptcha widget #}
+   <script src="https://www.google.com/recaptcha/api.js?sitekey=KEY_ID&badge=bottomleft" async defer></script>
+{% endblock %}

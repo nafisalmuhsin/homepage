@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Edit Medical Record</h2>
+  <form method="POST" action="{{ url_for('main.edit_record', record_id=record.id) }}">
+    {{ form.hidden_tag() }}
+    <div class="form-group">{{ form.patient_name.label }}{{ form.patient_name() }}</div>
+    <div class="form-group">{{ form.patient_email.label }}{{ form.patient_email() }}</div>
+    <div class="form-group">{{ form.address.label }}{{ form.address() }}</div>
+    <div class="form-group">{{ form.date_of_birth.label }}{{ form.date_of_birth() }}</div>
+    <div class="form-group">{{ form.gender.label }}{{ form.gender() }}</div>
+    <div class="form-group">{{ form.allergies.label }}{{ form.allergies() }}</div>
+    <div class="form-group">{{ form.medications.label }}{{ form.medications() }}</div>
+    <div class="form-group">{{ form.provider_name.label }}{{ form.provider_name() }}</div>
+    <div class="form-group">{{ form.diagnosis.label }}{{ form.diagnosis() }}</div>
+    <button type="submit" class="btn btn-primary">Update Record</button>
+  </form>
+{% endblock %}
